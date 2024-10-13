@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Charity Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Donate Crypto to Charities</h1>
+        <p>Connect your wallet and make an impact by donating cryptocurrency to charitable causes.</p>
+        <button id="connectWallet">Connect Wallet</button>
+
+        <div id="donationForm" style="display: none;">
+            <h2>Select Charity</h2>
+            <select id="charitySelect">
+                <option value="0xCharity1Address">Charity 1</option>
+                <option value="0xCharity2Address">Charity 2</option>
+                <option value="0xCharity3Address">Charity 3</option>
+            </select>
+
+            <h2>Enter Amount (ETH)</h2>
+            <input type="number" id="amountInput" placeholder="Amount in ETH">
+            <button id="donateButton">Donate</button>
+        </div>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
